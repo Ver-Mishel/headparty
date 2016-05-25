@@ -1,0 +1,44 @@
+/**
+ * @brief 
+ * @author Ver_Mishel <kshilov@inbox.ru>
+ */
+
+* {
+	box-sizing: border-box;
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	color: inherit;
+	border: none;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	resize: none;
+	list-style: none;
+	border-collapse: collapse;
+}
+html, body {
+	height: 100%;
+	min-width: 400px;
+	font-size: 16px;
+}
+.body-page {
+	min-height: 100%;
+	padding: 0 0 57px 0;
+}
+footer {
+    height: 57px;
+    margin: -57px 0 0 0;
+}
+
+.content {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
+.wide-content {
+	max-width: 1468px;
+	width: 100%;
+	margin: 0 auto;
+}
