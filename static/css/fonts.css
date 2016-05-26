@@ -1,9 +1,144 @@
-/*@font-face {
-	font-family: 'PFDinTextPro';
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 800;
+	font-style: normal;
+	src: url('../fonts/PFAgoraSansPro-Black/PFAgoraSansPro-Black.eot');
+	src: url('../fonts/PFAgoraSansPro-Black/PFAgoraSansPro-Black.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-Black/PFAgoraSansPro-Black.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-Black/PFAgoraSansPro-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 800;
+	font-style: italic;
+	src: url('../fonts/PFAgoraSansPro-BlackItalic/PFAgoraSansPro-BlackItalic.eot');
+	src: url('../fonts/PFAgoraSansPro-BlackItalic/PFAgoraSansPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-BlackItalic/PFAgoraSansPro-BlackItalic.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-BlackItalic/PFAgoraSansPro-BlackItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
 	font-weight: 700;
 	font-style: normal;
-	src: url('../fonts/PFDinTextPro-Bold.eot');
-	src: url('../fonts/PFDinTextPro-Bold.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/PFDinTextPro-Bold.woff') format('woff'),
-	url('../fonts/PFDinTextPro-Bold.ttf') format('truetype');
-}*/
+	src: url('../fonts/PFAgoraSansPro-Bold/PFAgoraSansPro-Bold.eot');
+	src: url('../fonts/PFAgoraSansPro-Bold/PFAgoraSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-Bold/PFAgoraSansPro-Bold.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-Bold/PFAgoraSansPro-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 700;
+	font-style: italic;
+	src: url('../fonts/PFAgoraSansPro-BoldItalic/PFAgoraSansPro-BoldItalic.eot');
+	src: url('../fonts/PFAgoraSansPro-BoldItalic/PFAgoraSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-BoldItalic/PFAgoraSansPro-BoldItalic.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-BoldItalic/PFAgoraSansPro-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 400;
+	font-style: italic;
+	src: url('../fonts/PFAgoraSansPro-Italic/PFAgoraSansPro-Italic.eot');
+	src: url('../fonts/PFAgoraSansPro-Italic/PFAgoraSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-Italic/PFAgoraSansPro-Italic.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-Italic/PFAgoraSansPro-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 300;
+	font-style: normal;
+	src: url('../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.eot');
+	src: url('../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 300;
+	font-style: italic;
+	src: url('../fonts/PFAgoraSansPro-LightItalic/PFAgoraSansPro-LightItalic.eot');
+	src: url('../fonts/PFAgoraSansPro-LightItalic/PFAgoraSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-LightItalic/PFAgoraSansPro-LightItalic.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-LightItalic/PFAgoraSansPro-LightItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 600;
+	font-style: normal;
+	src: url('../fonts/PFAgoraSansPro-Medium/PFAgoraSansPro-Medium.eot');
+	src: url('../fonts/PFAgoraSansPro-Medium/PFAgoraSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-Medium/PFAgoraSansPro-Medium.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-Medium/PFAgoraSansPro-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 600;
+	font-style: italic;
+	src: url('../fonts/PFAgoraSansPro-MediumItalic/PFAgoraSansPro-MediumItalic.eot');
+	src: url('../fonts/PFAgoraSansPro-MediumItalic/PFAgoraSansPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-MediumItalic/PFAgoraSansPro-MediumItalic.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-MediumItalic/PFAgoraSansPro-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.eot');
+	src: url('../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 200;
+	font-style: normal;
+	src: url('../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.eot');
+	src: url('../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 200;
+	font-style: italic;
+	src: url('../fonts/PFAgoraSansPro-ThinItalic/PFAgoraSansPro-ThinItalic.eot');
+	src: url('../fonts/PFAgoraSansPro-ThinItalic/PFAgoraSansPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-ThinItalic/PFAgoraSansPro-ThinItalic.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-ThinItalic/PFAgoraSansPro-ThinItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 900;
+	font-style: normal;
+	src: url('../fonts/PFAgoraSansPro-UltraBlack/PFAgoraSansPro-UltraBlack.eot');
+	src: url('../fonts/PFAgoraSansPro-UltraBlack/PFAgoraSansPro-UltraBlack.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-UltraBlack/PFAgoraSansPro-UltraBlack.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-UltraBlack/PFAgoraSansPro-UltraBlack.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 900;
+	font-style: italic;
+	src: url('../fonts/PFAgoraSansPro-UltraBlackItalic/PFAgoraSansPro-UltraBlackItalic.eot');
+	src: url('../fonts/PFAgoraSansPro-UltraBlackItalic/PFAgoraSansPro-UltraBlackItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-UltraBlackItalic/PFAgoraSansPro-UltraBlackItalic.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-UltraBlackItalic/PFAgoraSansPro-UltraBlackItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 100;
+	font-style: normal;
+	src: url('../fonts/PFAgoraSansPro-XThin/PFAgoraSansPro-XThin.eot');
+	src: url('../fonts/PFAgoraSansPro-XThin/PFAgoraSansPro-XThin.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-XThin/PFAgoraSansPro-XThin.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-XThin/PFAgoraSansPro-XThin.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'PFAgoraSansPro';
+	font-weight: 100;
+	font-style: italic;
+	src: url('../fonts/PFAgoraSansPro-XThinItalic/PFAgoraSansPro-XThinItalic.eot');
+	src: url('../fonts/PFAgoraSansPro-XThinItalic/PFAgoraSansPro-XThinItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/PFAgoraSansPro-XThinItalic/PFAgoraSansPro-XThinItalic.woff') format('woff'),
+		 url('../fonts/PFAgoraSansPro-XThinItalic/PFAgoraSansPro-XThinItalic.ttf') format('truetype');
+}
