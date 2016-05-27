@@ -101,6 +101,10 @@ $(function () {
     		return false;
     	}
     });
+	$('.btn-menu, .btn-close').click(function () {
+		$('.short-menu').fadeToggle();
+	})
+
 });
 
 

@@ -108,6 +108,32 @@ header {
 	background-position: -288px 0;
 }
 
+.short-menu {
+    position: absolute;
+    top: -20px;
+    left: 105%;
+    background: #fff;
+    padding: 20px 160px 20px 30px;
+    display: none;
+}
+.short-menu .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+    line-height: 1;
+    cursor: pointer;
+}
+.short-menu a {
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 25px;
+    font-weight: 300;
+}
+.short-menu a:hover {
+    color: #ad9356;
+}
+
 .feedback {
     text-align: right;
 }
