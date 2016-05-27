@@ -78,3 +78,31 @@ var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href=
 	rotator();
 });
 })(jQuery);
+
+$(function () {
+    // Calc main slider height
+    (function () {
+        var slider = $('.main-slider');
+        if (!slider.size()) {
+            return;
+        }
+        var images = slider.find('img');
+        calc();
+        $(window).resize(calc);
+        function calc() {
+            slider.css({ height: images/*.filter(':visible')*/.height() + 'px' });
+        }
+    })();
+    // Animate url
+    $('.main-slider__info_slide-bot').click(function () {
+	var related = $('#' + this.href.split('#')[1]);
+    	if (related.size()) {
+    		$('html, body').animate({ scrollTop: related.offset().top + 'px' }, 500);
+    		return false;
+    	}
+    });
+});
+
+
+
+
