@@ -104,7 +104,7 @@ $(function () {
 	$('.btn-menu, .btn-close').click(function () {
 		$('.short-menu').fadeToggle();
 	})
-
+	
 });
 
 
