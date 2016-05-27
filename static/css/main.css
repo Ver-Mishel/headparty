@@ -116,7 +116,7 @@ header {
     padding: 20px 160px 20px 30px;
     display: none;
 }
-.short-menu .btn-close {
+.btn-close {
     position: absolute;
     top: 10px;
     right: 15px;
@@ -192,6 +192,7 @@ header {
 .main-slider {
     width: 100%;
     position: relative;
+    padding-bottom: 50%;
 }
 #slider-wrap,
 #slider,
@@ -513,4 +514,71 @@ header {
 }
 .main-footer span em {
     color: #ad9356;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 22;
+    top: 0;
+    left: 0;
+}
+.modal-block .modal-body {
+    background: #ffffff;
+    position: relative;
+}
+.modal-content {
+    padding: 50px 70px;
+}
+.modal-content.modal-about {
+    padding: 50px 70px 20px;
+}
+.modal-content-footer {
+    padding: 20px 70px;
+}
+.modal-body h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    display: block;
+    margin: 0 auto;
+    background: #ad9356;
+    color: #fff;
+    padding: 7px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
 }

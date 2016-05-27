@@ -81,7 +81,7 @@ var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href=
 
 $(function () {
     // Calc main slider height
-    (function () {
+    /*(function () {
         var slider = $('.main-slider');
         if (!slider.size()) {
             return;
@@ -90,9 +90,9 @@ $(function () {
         calc();
         $(window).resize(calc);
         function calc() {
-            slider.css({ height: images/*.filter(':visible')*/.height() + 'px' });
+            slider.css({ height: images/!*.filter(':visible')*!/.height() + 'px' });
         }
-    })();
+    })();*/
     // Animate url
     $('.main-slider__info_slide-bot').click(function () {
 	var related = $('#' + this.href.split('#')[1]);
@@ -101,10 +101,14 @@ $(function () {
     		return false;
     	}
     });
-	$('.btn-menu, .btn-close').click(function () {
+	// Работа с модалками
+	$('.btn-menu, .short-menu .btn-close').click(function () {
 		$('.short-menu').fadeToggle();
 	})
-	
+	$('.modal-block .btn-close').click(function () {
+		$(this).parents('.modal-block').fadeToggle();
+	})
+
 });
 
 
