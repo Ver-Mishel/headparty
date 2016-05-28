@@ -104,11 +104,20 @@ $(function () {
 	// Работа с модалками
 	$('.btn-menu, .short-menu .btn-close').click(function () {
 		$('.short-menu').fadeToggle();
-	})
+	});
 	$('.modal-block .btn-close').click(function () {
-		$(this).parents('.modal-block').fadeToggle();
+		$(this).parents('.modal-block').animate({opacity: 0}, 500, function () {
+			$(this).removeClass('modal-active');
+		});
+	});
+	$('.feedback__get-form, .url-more.url-callback').click(function () {
+		$('.modal-block.modal-feedback').addClass('modal-active').animate({opacity: 1}, 500);
+		return false;
+	});
+	$('.url-more.url-about').click(function () {
+		$('.modal-block.modal-about').addClass('modal-active').animate({opacity: 1}, 500);
+		return false;
 	})
-
 });
 
 
