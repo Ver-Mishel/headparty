@@ -118,6 +118,10 @@ $(function () {
 		$('.modal-block.modal-about').addClass('modal-active').animate({opacity: 1}, 500);
 		return false;
 	})
+    //	Анимация страницы помощи
+    $(".block-help-item h3").click(function () {
+        $(this).next().slideToggle();
+    })
 });
 
 
