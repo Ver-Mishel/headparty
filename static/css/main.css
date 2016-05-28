@@ -8,7 +8,7 @@
 	font-size: inherit;
 	font-weight: inherit;
 	font-style: inherit;
-	font-family: "PFAgoraSansPro";
+	font-family: "PFAgoraSansPro", serif;
 	color: #222222;
 	border: none;
 	margin: 0;
@@ -325,7 +325,7 @@ header {
 }
 .section3 .jack-answer {
     background-image: url("../img/jack-talk-2.png");
-    top: 0px;
+    top: 0;
     right: -280px;
     padding-left: 25px;
 }
@@ -819,19 +819,19 @@ footer span em {
     margin: 0 15px;
 }
 .social-connection-urls a:nth-child(1) {
-    background-position: 0px -2px;
+    background-position: 0 -2px;
     width: 35px;
 }
 .social-connection-urls a:nth-child(2) {
-    background-position: -70px 0px;
+    background-position: -70px 0;
     width: 28px;
 }
 .social-connection-urls a:nth-child(3) {
-    background-position: -135px 0px;
+    background-position: -135px 0;
     width: 20px;
 }
 .social-connection-urls a:nth-child(4) {
-    background-position: -199px 0px;
+    background-position: -199px 0;
     width: 20px;
 }
 .block-blog.post-grey {
