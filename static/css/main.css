@@ -116,6 +116,7 @@ header {
     background: #fff;
     padding: 20px 160px 20px 30px;
     display: none;
+    z-index: 50;
 }
 .short-menu-body {
     padding: 50px 160px 20px 180px;
@@ -998,7 +999,7 @@ section.big-h3 h3 {
     position: absolute;
     bottom: -30px;
     right: 17%;
-    z-index: 25;
+    z-index: 1;
     width: 350px;
 }
 .header-reviews-img img {
@@ -1056,4 +1057,54 @@ section.big-h3 h3 {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.form-reviews .form-question-body {
+    padding: 0;
+    margin: 0 auto;
+}
+.form-reviews .form-question-body h3 {
+    text-align: center;
+}
+.hidden-input {
+    width: 0;
+    height: 0;
+    margin: 0;
+    line-height: 0;
+    padding: 0;
+    font-size: 0;
+}
+.block-add-photo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.7;
+    padding-left: 75px;
+    padding-top: 5px;
+    position: relative;
+}
+.block-add-photo:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    background-image: url("../img/reviews/photo-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+}
+.block-add-photo label {
+    color: #ad9356;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.block-add-photo em {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+.file-and-btn .btn-submit {
+    float: right;
 }

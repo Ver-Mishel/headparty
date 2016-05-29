@@ -20,18 +20,6 @@
             <div class="header-menu">
                 <a href="#" class="header-logo"><img src="static/img/logo.png" alt=""></a>
                 <a href="#" class="btn-menu"><img src="static/img/btn-menu.png" alt=""></a>
-                <div class="short-menu">
-                    <div class="short-menu-body">
-                        <a href="#" class="header-logo"><img src="static/img/logo.png" alt=""></a>
-                        <a class="btn-close"></a>
-                        <a href="#">Портфолио</a>
-                        <a href="#">Услуги</a>
-                        <a href="#">Помощь</a>
-                        <a href="#">Видео</a>
-                        <a href="#">Отзывы</a>
-                        <a href="#">Блог</a>
-                    </div>
-                </div>
             </div>
             <div class="social-block">
                 <a href="#" class="social-block__url"></a>
@@ -47,6 +35,18 @@
             </div>
         </div>
     </header>
+    <div class="short-menu">
+        <div class="short-menu-body">
+            <a href="#" class="header-logo"><img src="static/img/logo.png" alt=""></a>
+            <a class="btn-close"></a>
+            <a href="#">Портфолио</a>
+            <a href="#">Услуги</a>
+            <a href="#">Помощь</a>
+            <a href="#">Видео</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Блог</a>
+        </div>
+    </div>
 
     <section class="reviews">
         <div class="block-header">
@@ -150,14 +150,21 @@
         </div>
 
     </section>
-    <section class="form-question big-h3">
+    <section class="form-question big-h3 form-reviews">
         <div class="content">
             <form action="" class="form-question-body" method="post">
-                <h3><span>Задать</span> вопрос</h3>
+                <h3><span>Оставить</span> отзыв</h3>
                 <input class="input-reg" type="text" placeholder="Ваше имя" required>
                 <input class="input-reg input-reg-margin" type="text" placeholder="Эл. почта" required>
-                <textarea name="" id="" cols="" rows="" placeholder="Ваш вопрос"></textarea>
-                <input type="submit" value="Отправить" class="btn-submit">
+                <textarea name="" id="" cols="" rows="" placeholder="Ваш отзыв"></textarea>
+                <div class="file-and-btn">
+                    <input type="file" id="add-photo" class="hidden-input">
+                    <p class="block-add-photo">
+                        <label for="add-photo">Прикрепить</label> фото для аватарки
+                        <em>Изображение в формате JPG, GIF или PNG</em>
+                    </p>
+                    <input type="submit" value="Отправить" class="btn-submit">
+                </div>
             </form>
         </div>
     </section>
@@ -212,6 +219,11 @@
         </div>
     </div>
 </div>
+
+<!--[if lt IE 9]>
+<script src="static/js/html5shiv-printshiv.js"></script>
+<script src="static/js/respond.min.js"></script>
+<![endif]-->
 
 <script src="static/js/jquery-1.11.1.min.js"></script>
 <script src="static/js/main.js"></script>
