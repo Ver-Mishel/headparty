@@ -948,3 +948,46 @@ section.big-h3 h3 {
 .form-question-body .btn-submit {
     margin: 0;
 }
+
+/* Страница видео */
+.video-content {
+    padding: 30px 0;
+}
+.blog-nav-item {
+    line-height: 54px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 22px;
+}
+.blog-content-navigation .blog-nav-item.active {
+    background: #ad9356;
+    color: #fff;
+}
+.blog-content-video {
+    padding: 30px 0;
+    font-size: 0;
+}
+.blog-content-video-item {
+    display: inline-block;
+    vertical-align: top;
+}
+.blog-content-video-item.big-video {
+    float: left;
+    overflow: hidden;
+}
+.blog-content-video-item figcaption {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+.blog-content-video-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px 30px 0;
+}
+.blog-content-video-item:nth-child(3n),
+.blog-content-video-item:nth-child(2) {
+    margin-right: 0;
+}
