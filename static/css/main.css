@@ -623,7 +623,7 @@ footer span em {
 
 
 .body-page.second-pages {
-    padding-top: 109px;
+    padding-top: 105px;
 }
 /* Страница 404 */
 .body-page.page-404 {
@@ -742,7 +742,7 @@ footer span em {
     line-height: 2;
     font-size: 14px;
     position: relative;
-    display: block;
+    display: inline-block;
 }
 .back-to-list:before {
     content: '';
@@ -1110,3 +1110,9 @@ section.big-h3 h3 {
 }
 
 /* Страница услуг */
+
+
+/* Страница фотоотчета */
+
+
+/* Страница портфолио */
