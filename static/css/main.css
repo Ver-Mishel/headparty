@@ -1115,7 +1115,43 @@ section.big-h3 h3 {
 }
 
 /* Страница услуг */
-
+.section-services-1 {
+    position: relative;
+}
+.services-header-img {
+    width: 100%;
+}
+.section-services-1 .content-body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 109px;
+}
+.section-services-1 .section-services-1-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.section-services-1 h1 {
+    text-align: center;
+    font-size: 71px;
+    text-transform: uppercase;
+    color: #ad9356;
+    font-weight: 200;
+}
+.section-services-1-content-item {
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    text-align: center;
+}
+.section-services-1-content-item.with-photo {
+    flex-flow: row;
+    width: 45%;
+    text-align: left;
+}
 
 /* Страница фотоотчета */
 

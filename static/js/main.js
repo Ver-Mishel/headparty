@@ -125,5 +125,12 @@ $(function () {
 });
 
 
-
+$(document).click(function (e) {
+	var target = $(e.target);
+	if (!target.hasClass('modal-body') && !target.closest('.modal-body').size()) {
+		$('.modal-block').animate({opacity: 0}, 500, function () {
+			$(this).removeClass('modal-active');
+		});
+	}
+});
 
