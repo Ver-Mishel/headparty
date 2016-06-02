@@ -1136,10 +1136,11 @@ section.big-h3 h3 {
 }
 .section-services-1 h1 {
     text-align: center;
-    font-size: 71px;
+    font-size: 87px;
     text-transform: uppercase;
     color: #ad9356;
     font-weight: 200;
+    line-height: 2;
 }
 .section-services-1-content-item {
     display: flex;
@@ -1149,8 +1150,52 @@ section.big-h3 h3 {
 }
 .section-services-1-content-item.with-photo {
     flex-flow: row;
-    width: 45%;
+    width: 48%;
     text-align: left;
+}
+.content-item-content h4 {
+    color: #ad9356;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.content-item-content p {
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 2;
+}
+.section-header {
+    font-size: 51px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+.block-services-help .content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.block-services-help-item {
+    width: 40%;
+}
+.block-services-help-item.help-item-short {
+    width: 30%;
+}
+.block-services-info .content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.block-services-info .content > div {
+    width: 48%;
+}
+.howWeWork .content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.howWeWork figure {
+    width: 22%;
+    text-align: center;
 }
 
 /* Страница фотоотчета */
