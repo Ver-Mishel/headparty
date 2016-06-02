@@ -1117,16 +1117,7 @@ section.big-h3 h3 {
 /* Страница услуг */
 .section-services-1 {
     position: relative;
-}
-.services-header-img {
-    width: 100%;
-}
-.section-services-1 .content-body {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    min-height: 1019px;
     padding-top: 109px;
 }
 .section-services-1 .section-services-1-content {
@@ -1187,6 +1178,7 @@ section.big-h3 h3 {
 }
 .block-services-info .content > div {
     width: 48%;
+    position: relative;
 }
 .howWeWork .content {
     display: flex;
@@ -1197,8 +1189,93 @@ section.big-h3 h3 {
     width: 22%;
     text-align: center;
 }
+.block-services-info-graf-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
 
 /* Страница фотоотчета */
 
 
 /* Страница портфолио */
+.section-portfolio-1 {
+    position: relative;
+    min-height: 1019px;
+    padding-top: 109px;
+}
+.section-portfolio-1 .section-portfolio-1-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.section-portfolio-1 h1 {
+    text-align: center;
+    font-size: 87px;
+    text-transform: uppercase;
+    color: #ad9356;
+    font-weight: 200;
+    line-height: 2;
+}
+.logos-item {
+    background-image: url("../img/portfolio/logos.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.logos-item:nth-child(2) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(3) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(4) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(5) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(6) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(7) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(8) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(9) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(10) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(11) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(12) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(13) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(14) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(15) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(16) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(17) {
+    background-position: 0 0;
+}
+.logos-item:nth-child(18) {
+    background-position: 0 0;
+}
