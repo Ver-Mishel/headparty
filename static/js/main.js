@@ -117,63 +117,12 @@ $(function () {
 	$('.url-more.url-about').click(function () {
 		$('.modal-block.modal-about').addClass('modal-active').animate({opacity: 1}, 500);
 		return false;
-	})
+	});
     //	Анимация страницы помощи
     $(".block-help-item h3").click(function () {
         $(this).next().slideToggle();
-    })
-});
-
-
-$(document).click(function (e) {
-	var target = $(e.target);
-	if (!target.hasClass('modal-body') && !target.closest('.modal-body').size()) {
-		$('.modal-block').animate({opacity: 0}, 500, function () {
-			$(this).removeClass('modal-active');
-		});
-	}
-});
-
-
-
-
-
-$(document).ready(function() {
-	$(".phone-number").mask("+7 (999) 999 - 99 - 99");
-	// Slider rjukzakov
-	(function () {
-		var slider = $('.section.section-3'),
-			list = slider.find('.slider-body > div'),
-			flag = false,
-			duration = 200;
-		slider.find('.arrows').click(function () {
-			if (!flag) {
-				flag = true;
-				var items = list.find('.item');
-				var item;
-				if ($(this).hasClass('arrow-right')) {
-					list.append(items.first().clone(true)).animate({ marginLeft: (-1 * items.first().width()) + 'px' }, duration, function () {
-						flag = false;
-						items.first().remove();
-						list.css({ marginLeft: 0 });
-					});
-					item = list.find('.item').eq(1);
-				} else {
-					list
-						.css({ marginLeft: (-1 * items.first().width()) + 'px' })
-						.prepend(items.last().clone(true))
-						.animate({ marginLeft: 0 }, duration, function () {
-							flag = false;
-							items.last().remove();
-						});
-					item = list.find('.item').eq(0);
-				}
-			}
-		});
-	})();
-
-
-	// Slider foto
+    });
+	/*// Slider галереи
 	(function () {
 		var slider = $('.section.section-5'),
 			list = slider.find('.slider-body > div'),
@@ -203,8 +152,17 @@ $(document).ready(function() {
 				}
 			}
 		});
-	})();
+	})();*/
 
 
+});
 
+
+$(document).click(function (e) {
+	var target = $(e.target);
+	if (!target.hasClass('modal-body') && !target.closest('.modal-body').size()) {
+		$('.modal-block').animate({opacity: 0}, 500, function () {
+			$(this).removeClass('modal-active');
+		});
+	}
 });

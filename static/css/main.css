@@ -1402,11 +1402,8 @@ section.big-h3 h3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-}
-.photootchet-gallery-item {
-    width: 25%;
-    position: relative;
-    overflow: hidden;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bbbbbb;
 }
 .photootchet-gallery-item {
     width: 285px;
@@ -1414,6 +1411,10 @@ section.big-h3 h3 {
     height: 285px;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Страница портфолио */
