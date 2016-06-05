@@ -547,10 +547,10 @@ header {
 .section5__item-body__item p {
     font-size: 16px;
     text-transform: uppercase;
-    color: #fff;
 }
 .section5__item.bad-side .section5__item-body__item p {
     text-decoration: line-through;
+    color: #fff;
 }
 .section6 {
     text-align: center;
