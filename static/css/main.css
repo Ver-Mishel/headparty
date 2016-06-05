@@ -1,5 +1,5 @@
 /**
- * @brief 
+ * @brief
  * @author Ver_Mishel <kshilov@inbox.ru>
  */
 
@@ -203,10 +203,18 @@ header {
     font-weight: 200;
 }
 .main-slider__info h1 span {
-    display: block;
-    text-decoration: line-through;
+    display: inline-block;
     color: #222;
     font-weight: 100;
+    position: relative;
+}
+.main-slider__info h1 span:after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid #222;
+    left: 0;
+    right: 0;
+    top: 50%;
 }
 
 /* Стили слайдера на главной странице */
