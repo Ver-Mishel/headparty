@@ -1169,6 +1169,7 @@ section.big-h3 h3 {
     font-size: 16px;
     font-weight: 400;
     padding: 0 22px;
+    cursor: pointer;
 }
 .blog-content-navigation .blog-nav-item.active {
     background: #ad9356;
@@ -1778,7 +1779,7 @@ section.big-h3 h3 {
 /* Страница портфолио */
 .section-portfolio-1 {
     position: relative;
-    min-height: 1019px;
+    min-height: 911px;
     padding-top: 109px;
 }
 .section-portfolio-1 .section-portfolio-1-content {
@@ -1791,10 +1792,11 @@ section.big-h3 h3 {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: center;
        -moz-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: center;
+    font-size: 0;
 }
 .section-portfolio-1 h1 {
     text-align: center;
@@ -1804,61 +1806,194 @@ section.big-h3 h3 {
     font-weight: 200;
     line-height: 2;
 }
+.section-portfolio-1-content-item {
+    background: #f3f3f2;
+}
+.section-portfolio-1-content-item.portfolio-item-short {
+    width: 274px;
+    height: 255px;
+}
+.section-portfolio-1-content-item {
+    width: 365px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-portfolio-1-content-item.portfolio-item-yellow {
+    background: #ad9356;
+}
+.section-portfolio-1-content-item.portfolio-item-foto1 {
+    background: url("../img/portfolio/block-1-img-1.png");
+}
+.section-portfolio-1-content-item.portfolio-item-foto2 {
+    background: url("../img/portfolio/block-1-img-2.png");
+}
+.section-portfolio-1-content-item.portfolio-item-foto3 {
+    background: url("../img/portfolio/block-1-img-3.png");
+}
+.section-portfolio-1-content-item.portfolio-item-foto4 {
+    background: url("../img/portfolio/block-1-img-4.png");
+}
+.section-portfolio-1-content-item h4 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.section-portfolio-1-content-item span {
+    color: #fff;
+}
+.section-portfolio-1-content-item p {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.section-portfolio-1-content-item.portfolio-item-foto p,
+.section-portfolio-1-content-item.portfolio-item-foto h4 {
+    color: #fff;
+}
+.section-portfolio-1-content-item.portfolio-item-foto span {
+    color: #ad9356;
+}
+.section-portfolio-1-content-item .p-yellow {
+    color: #ad9356;
+}
+.section-portfolio-1-content-item.portfolio-item-foto4 p,
+.section-portfolio-1-content-item.portfolio-item-foto4 h4 {
+    color: #000;
+}
+.workAndFriends {
+    background: #f3f3f2;
+    padding: 10px 0 70px;
+}
+.workAndFriends .content {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+.workAndFriends-item {
+    position: relative;
+    width: 364px;
+    overflow: hidden;
+}
+.workAndFriends-item.workAndFriends-item-big {
+    width: 728px;
+}
+.workAndFriends-item a {
+    font-size: 24px;
+    background: #ffffff;
+    line-height: 47px;
+    padding: 0 14px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+.logos {
+    padding: 50px 0;
+}
+.logos .content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 0;
+}
 .logos-item {
     background-image: url("../img/portfolio/logos.png");
-    background-position: 0 0;
+    background-position: 0 -10px;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
+    width: 160px;
+    height: 110px;
 }
 .logos-item:nth-child(2) {
-    background-position: 0 0;
+    background-position: -190px -10px;
 }
 .logos-item:nth-child(3) {
-    background-position: 0 0;
+    background-position: -380px -10px;
 }
 .logos-item:nth-child(4) {
-    background-position: 0 0;
+    background-position: -570px -10px;
 }
 .logos-item:nth-child(5) {
-    background-position: 0 0;
+    background-position: -750px -10px;
 }
 .logos-item:nth-child(6) {
-    background-position: 0 0;
+    background-position: -940px -10px;
 }
 .logos-item:nth-child(7) {
-    background-position: 0 0;
+    background-position: 0 -150px;
 }
 .logos-item:nth-child(8) {
-    background-position: 0 0;
+    background-position: -190px -150px;
 }
 .logos-item:nth-child(9) {
-    background-position: 0 0;
+    background-position: -380px -150px;
 }
 .logos-item:nth-child(10) {
-    background-position: 0 0;
+    background-position: -570px -150px;
 }
 .logos-item:nth-child(11) {
-    background-position: 0 0;
+    background-position: -750px -150px;
 }
 .logos-item:nth-child(12) {
-    background-position: 0 0;
+    background-position: -940px -150px;
 }
 .logos-item:nth-child(13) {
-    background-position: 0 0;
+    background-position: 0 -290px;
 }
 .logos-item:nth-child(14) {
-    background-position: 0 0;
+    background-position: -190px -290px;
 }
 .logos-item:nth-child(15) {
-    background-position: 0 0;
+    background-position: -380px -290px;
 }
 .logos-item:nth-child(16) {
-    background-position: 0 0;
+    background-position: -570px -290px;
 }
 .logos-item:nth-child(17) {
-    background-position: 0 0;
+    background-position: -750px -290px;
 }
 .logos-item:nth-child(18) {
-    background-position: 0 0;
+    background-position: -940px -290px;
+}
+.media-block {
+    background: #222222;
+    padding: 50px 0;
+    text-align: center;
+}
+.media-block .url-more {
+    color: #ad9356;
+    border: 3px solid #ad9356;
+    margin-top: 30px;
+ }
+.my-newlyweds.block-blog .blog-content {
+    padding: 10px 0 60px;
+}
+.my-newlyweds {
+    background: #f3f3f2;
+}
+.my-newlyweds .blog-item {
+    font-size: 0;
+}
+.my-newlyweds .blog-item h4 {
+    display: inline-block;
+    line-height: 2;
+    padding: 0 10px;
+    background: #fff;
+}
+.reviews-block {
+    padding: 50px 0;
+    text-align: center;
+}
+.reviews-block .url-more {
+    color: #ad9356;
+    border: 3px solid #ad9356;
+    margin-top: 30px;
+}
+
+.reviews-block .reviews-content-item {
+    max-width: 920px;
+    margin: 60px auto 40px;
 }
