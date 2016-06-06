@@ -2066,11 +2066,45 @@ section.big-h3 h3 {
     overflow: hidden;
     margin: 0 auto;
 }
+.image-slider .slider-body {
+    overflow: visible;
+    position: relative;
+    font-size: 0;
+}
+.image-slider .slider-body:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -10000px;
+    width: 10000px;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    z-index: 1;
+}
+.image-slider .slider-body:after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: -10000px;
+    width: 10000px;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    z-index: 1;
+}
+.image-slider .slider-content {
+    margin-left: -980px;
+}
 .slider-content {
     width: 10000px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+.image-slider-item {
+    position: relative;
+    max-width: 980px;
 }
 .arrows {
     width: 90px;
@@ -2080,14 +2114,15 @@ section.big-h3 h3 {
     top: 50%;
     margin-top: -45px;
     cursor: pointer;
+    z-index: 2;
 }
 .arrows.arr-left {
     background-image: url("../img/portfolio/arr-l.png");
     background-size: cover;
-    left: -20px;
+    left: -30px;
 }
 .arrows.arr-right {
     background-image: url("../img/portfolio/arr-r.png");
     background-size: cover;
-    right: -20px;
+    right: -30px;
 }
