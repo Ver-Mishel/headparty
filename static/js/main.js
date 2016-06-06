@@ -5,14 +5,22 @@ $(function () {
 	if (!answer.size()) {
 		return;
 	}
-	var pointer = answer.siblings('.touch-place');
+	var pointer = answer.siblings('.touch-place'),
+		ask = answer.siblings('.jack-ask');
 	pointer.on('mousemove', move);
 	var counter = 0,
 		max = 100;
 	function move(e) {
 		if (++counter >= max) {
 			answer.addClass('active');
+			ask.addClass('active');
 			pointer.off('mousemove', move);
+			setTimeout(function () {
+				counter = 0;
+				answer.removeClass('active');
+				ask.removeClass('active');
+				pointer.on('mousemove', move);
+			}, 5000);
 		}
 	}
 });

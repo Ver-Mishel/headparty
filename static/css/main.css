@@ -433,6 +433,14 @@ header {
     top: 260px;
     left: -340px;
     padding-right: 25px;
+    opacity: 1;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.section3 .jack-ask.active {
+    opacity: 0;
 }
 .section3 .jack-answer {
     background-image: url("../img/jack-talk-2.png");
@@ -2098,9 +2106,23 @@ section.big-h3 h3 {
 }
 .slider-content {
     width: 10000px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 .image-slider-item {
     position: relative;
@@ -2119,10 +2141,16 @@ section.big-h3 h3 {
 .arrows.arr-left {
     background-image: url("../img/portfolio/arr-l.png");
     background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
     left: -30px;
 }
 .arrows.arr-right {
     background-image: url("../img/portfolio/arr-r.png");
     background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
     right: -30px;
 }
