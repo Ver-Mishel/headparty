@@ -1,9 +1,26 @@
 
 
+$(function () {
+	var answer = $('.talking-jack.jack-answer');
+	if (!answer.size()) {
+		return;
+	}
+	var pointer = answer.siblings('.touch-place');
+	pointer.on('mousemove', move);
+	var counter = 0,
+		max = 100;
+	function move(e) {
+		if (++counter >= max) {
+			answer.addClass('active');
+			pointer.off('mousemove', move);
+		}
+	}
+});
+
 
 /*
 
-HW Slider - простой слайдер на jQuery. 
+HW Slider - простой слайдер на jQuery.
 
 Настройки скрипта:
 
@@ -47,7 +64,7 @@ $(document).ready(function(e) {
 		}
 if(hwNeedLinks){
 var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href="#">&gt;</a>')
-	.prependTo('#slider');		
+	.prependTo('#slider');
 	$('#nextbutton').click(function(){
 		animSlide("next");
 		return false;
@@ -71,7 +88,7 @@ var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href=
 	var rotator = function(){
 				if(!pause){slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);}
 			}
-	$('#slider-wrap').hover(	
+	$('#slider-wrap').hover(
 		function(){clearTimeout(slideTime); pause = true;},
 		function(){pause = false; rotator();
 		});

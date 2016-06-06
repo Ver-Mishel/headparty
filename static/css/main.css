@@ -432,6 +432,14 @@ header {
     top: 0;
     right: -280px;
     padding-left: 25px;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.section3 .jack-answer.active {
+    opacity: 1;
 }
 .section3 .touch-place {
     background-image: url("../img/jack-touch.png");
@@ -1820,10 +1828,28 @@ section.big-h3 h3 {
 .section-portfolio-1-content-item {
     width: 365px;
     height: 255px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .section-portfolio-1-content-item.portfolio-item-yellow {
     background: #ad9356;
@@ -1872,11 +1898,25 @@ section.big-h3 h3 {
     padding: 10px 0 70px;
 }
 .workAndFriends .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     font-size: 0;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 .workAndFriends-item {
     position: relative;
@@ -1899,9 +1939,19 @@ section.big-h3 h3 {
     padding: 50px 0;
 }
 .logos .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 0;
 }
 .logos-item {
