@@ -357,6 +357,13 @@ header {
 .section2__item_content.block-blog * {
     color: #fff;
 }
+.section2__item_content.block-blog p {
+    font-size: 23px;
+    color: #fff;
+}
+.section2__item_content.block-blog span {
+    color: #fff;
+}
 .section2__item_link {
     padding: 37px 32px;
     font-size: 26px;
@@ -2046,8 +2053,41 @@ section.big-h3 h3 {
     border: 3px solid #ad9356;
     margin-top: 30px;
 }
-
 .reviews-block .reviews-content-item {
     max-width: 920px;
-    margin: 60px auto 40px;
+    margin: 70px 30px 30px;
+}
+.slider-block {
+    width: 100%;
+    position: relative;
+}
+.slider-body {
+    width: 980px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider-content {
+    width: 10000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.arrows {
+    width: 90px;
+    height: 90px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    cursor: pointer;
+}
+.arrows.arr-left {
+    background-image: url("../img/portfolio/arr-l.png");
+    background-size: cover;
+    left: -20px;
+}
+.arrows.arr-right {
+    background-image: url("../img/portfolio/arr-r.png");
+    background-size: cover;
+    right: -20px;
 }
