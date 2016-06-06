@@ -334,13 +334,13 @@ header {
             align-self: flex-start;
     margin: 30px 0;
 }
-.section2__item .section2__item_content img {
+.section2__item .section2__item_content {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
 }
-.section2__item .section2__item_content:hover img {
+.section2__item .section2__item_content:hover {
     -webkit-transform: scale(1.1);
        -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -352,6 +352,10 @@ header {
     height: 200px;
     padding: 65px 80px 20px;
     background: #ad9356;
+    font-size: 20px;
+}
+.section2__item_content.block-blog * {
+    color: #fff;
 }
 .section2__item_link {
     padding: 37px 32px;
