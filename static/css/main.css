@@ -93,10 +93,20 @@ header {
 }
 .header-logo {
     margin-top: -5px;
+    position: relative;
+    width: 144px;
+}
+.header-logo img {
+    width: 100%;
 }
 .btn-menu {
     margin: 0 0 0 50px;
     cursor: pointer;
+    width: 53px;
+    position: relative;
+}
+.btn-menu img {
+    width: 100%;
 }
 .social-block {
     display: -webkit-box;
@@ -335,6 +345,9 @@ header {
             align-self: flex-start;
     margin: 30px 0;
 }
+.section2__item img {
+    width: 100%;
+}
 .section2__item .section2__item_content {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -407,6 +420,9 @@ header {
 }
 .block-jack {
     position: relative;
+}
+.block-jack img {
+    width: 100%;
 }
 .section3 .main-jack,  .section3 .talking-jack, .section3 .touch-place {
     position: absolute;
