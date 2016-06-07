@@ -638,6 +638,13 @@ header {
         -ms-flex-direction: row;
             flex-direction: row;
 }
+.section7__item {
+    width: 50%;
+    position: relative;
+}
+.section7__item img {
+    width: 100%;
+}
 .section7__item:nth-child(2) {
     display: -webkit-box;
     display: -webkit-flex;
